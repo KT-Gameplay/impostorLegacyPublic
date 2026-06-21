@@ -1,4 +1,5 @@
 import flixel.addons.text.FlxTypeText;
+
 import funkin.FunkinAssets;
 
 using StringTools;
@@ -35,9 +36,9 @@ public var repeatedCutscenes:Bool = false;
  * other thingies
 **/
 public var videoCheckStory:Bool = true;
+
 public var skippableVideo:Bool = true;
 public var video:FunkinVideoSprite;
-
 public var skipText:FlxText; // skip video text
 var bgFade:FlxSprite;
 var box:RGBSprite;
@@ -180,7 +181,7 @@ function speakerAnims(char:String = 'bf')
 	}
 	else
 	{
-		var path:String = Paths.getPath('data/dialogue/' + char + '.json', null, true);
+		var path:String = Paths.getPath('data/dialogue/' + char + '.json', null, PathsTestMode.NORMAL);
 		dialogueChar = FunkinAssets.parseJson5(FunkinAssets.getContent(path));
 		charMap[char] = dialogueChar;
 		loadUp = true;
@@ -323,7 +324,7 @@ function v4SpeakerShit()
 public function readDialogue()
 {
 	if ((videoCheckStory && !isStoryMode) || PlayState.seenCutscene) return;
-	var txt = Paths.getPath('songs/' + Paths.sanitize(songName) + '/dialogue.txt', null, true);
+	var txt = Paths.getPath('songs/' + Paths.sanitize(songName) + '/dialogue.txt', null, PathsTestMode.NORMAL);
 	dialogueList = CoolUtil.coolTextFile(txt);
 	if (dialogueList.length == 0) return;
 	

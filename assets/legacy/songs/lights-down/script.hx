@@ -6,6 +6,7 @@ public var hudDarkShader:ExtraDropShadowShader;
 public var darkShader:ExtraDropShadowShader;
 public var vignette:Bool = false;
 var isDark:Bool = false;
+var noshader:Bool = false;
 
 function onLoad()
 {
@@ -140,6 +141,7 @@ function onEvent(eventName, value1, value2)
 			{
 				changeCharacter(dark, 0);
 				boyfriend.shader = null;
+				noshader = true;
 			}
 			else if (boyfriend.getFlag('dark') != true)
 			{
@@ -161,7 +163,7 @@ function onEvent(eventName, value1, value2)
 			
 			playHUD.healthBar.bg.setColorTransform();
 			
-			changeCharacter(PlayState.SONG.player1, 0);
+			if (noshader) changeCharacter(hasBfSkin ? ClientPrefs.bfSkin : PlayState.SONG.player1, 0);
 			
 			setVignette(vignette);
 			triggerEventNote('Change Character', '1', PlayState.SONG.player2);

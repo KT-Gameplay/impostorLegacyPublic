@@ -37,9 +37,20 @@ WEBSITE: https://vsimpostor.com/
 - Lithuanian
 
 # CHANGELOG
-Current version: **1.1.1**
+Current version: **1.1.1b**
 
-## 1.1.1 (june idk 2026)
+## 1.1.1b (june 21 2026)
+  
+### Bugfixes
+- Fixed dialogue and its cohorts from only the assets folder, resulting in modded dialogue crashing.
+- Lights Down correctly changes the current character if skins are equipped.
+- Clipping in Voting Time background fixed.
+
+### For developers
+These will only affect those who work on mods for Legacy
+- All events have descriptions to hopefully note what they do.
+
+## 1.1.1 (june 21 2026)
 
 ### Additions
 - **2 new languages have been added:**

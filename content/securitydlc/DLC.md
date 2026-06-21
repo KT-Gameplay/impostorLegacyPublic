@@ -26,16 +26,21 @@ The DLC is an example mod made for VS. Impostor Legacy. For a grounded guide to 
 - Vietnamese
 
 # CHANGELOG
-Current version: **1.1.1**
+Current version: **1.1.1b**
 
-## 1.1.1 (june idk 2025)
+## 1.1.1 (june 21 2026)
+
+### Changes
+- Mini Grey pet has correct requirements.
+
+## 1.1.1 (june 21 2026)
 
 ### Changes
 - Getting pranked in Don't Lied made more immersive.
   - Can no longer taunt during a prank.
 - Fixed some bugs with playable Noob49.
 - Added a missing note in Trot Away.
-- Fixed a issue with some skins in Suspect.
+- Fixed an issue with some skins in Suspect.
 - Fixed some issues with the EVIL BF skin.
 - Low Quality version of the Triple Threat stage fixed.
 - Mini Grey does not bend the rules of pixel stages.
