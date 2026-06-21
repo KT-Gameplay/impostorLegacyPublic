@@ -82,7 +82,7 @@ function onVidEnd()
 {
 	hideCaption();
 	
-	video.kill();
+	video.destroy();
 	vidPlaying = false;
 	camGame.visible = true;
 	skipText.visible = false;
@@ -121,7 +121,6 @@ public function videoCutscene(?vid:String = 'sussus-moogus', ?dAfter:Bool, ?canS
 	
 	video = new FunkinVideoSprite();
 	
-	video.onEnd(onVidEnd);
 	video.onFormat(() -> {
 		vidPlaying = true;
 		video.camera = camOther;
@@ -138,7 +137,17 @@ public function videoCutscene(?vid:String = 'sussus-moogus', ?dAfter:Bool, ?canS
 	
 	if (onEnd != null) video.onEnd(onEnd);
 	if (onFormat != null) video.onFormat(onFormat);
-	if (video.load(Paths.video(Paths.sanitize(vid)))) video.delayAndStart();
+	video.onEnd(onVidEnd);
+	
+	if (video.load(Paths.video(Paths.sanitize(vid))))
+	{
+		video.delayAndStart();
+	}
+	else
+	{
+		if (onEnd != null) onEnd();
+		onVidEnd();
+	}
 }
 
 public function textFade()
