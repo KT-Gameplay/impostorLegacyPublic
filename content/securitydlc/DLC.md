@@ -26,7 +26,13 @@ The DLC is an example mod made for VS. Impostor Legacy. For a grounded guide to 
 - Vietnamese
 
 # CHANGELOG
-Current version: **1.1.1b**
+Current version: **1.1.1**
+
+## 1.1.2 (? 2026)
+
+### Changes
+- Playable Noob49 error fixed.
+- Playable JADS has learned to speak.
 
 ## 1.1.1b (june 21 2026)
 
