@@ -194,7 +194,6 @@ function onCreatePost()
 					if (StringTools.startsWith(animName, name))
 					{
 						dad.swapAnims(animName, newName + animName.substr(name.length));
-						break;
 					}
 				}
 			}
