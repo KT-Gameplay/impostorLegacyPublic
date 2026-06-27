@@ -59,6 +59,8 @@ Current version: **1.1.1b**
 - Defeat stage tweaked.
 - Few sprites were turned into atlases.
 - Variants used more in characters.
+- The Ejected cutscene is changed if using skins.
+- Meltdown uses a correct icon in the Freeplay menu.
 
 ## 1.1.1b (june 21 2026)
   
