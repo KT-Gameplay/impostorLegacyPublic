@@ -41,6 +41,11 @@ Current version: **1.1.1b**
 
 ## 1.1.2 (? 2026)
 
+### Additions
+- Updated some libraries.
+	- Bumped Lime, OpenFL and Flixel versions.
+		- Seamless camera rotation with `scrollAngle` is now supported.
+
 ### Bugfixes
 - Fixed BPM and Section Beats UI behaving incorrectly in the Chart Editor.
 - Roomcode Pico sprite has a correct gameover sprite.
@@ -56,6 +61,7 @@ Current version: **1.1.1b**
 - Fixed some variables not working correctly in Hscript.
 
 ### Changes
+- HUD no longer cuts off in Ejected and Turbulence.
 - The "VICTORY" text in Victory is now translatable and in higher quality.
 - Copy Pet in Identity Crisis is now in grayscale instead of an off colored filter.
 - Parasite Maroon's healthbar color changed for effect.
