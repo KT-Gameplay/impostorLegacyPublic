@@ -30,7 +30,7 @@ function onLoad()
 	whoend.delay = 0.05;
 	whoend.updateHitbox();
 	whoend.x = 328;
-	whoend.y = 1100;
+	whoend.y = 1120;
 	add(whoend);
 	
 	whoAngered = new FlxSprite(-1000, 975);
