@@ -6,7 +6,7 @@ var furiousRage:FlxSprite;
 var emergency:FlxSprite;
 var starsBG:FlxBackDrop;
 var starsFG:FlxBackDrop;
-var whoend:FlxText;
+var whoend:FlxTypeText;
 
 function onLoad()
 {
@@ -23,13 +23,15 @@ function onLoad()
 	starsFG.visible = false;
 	add(starsFG);
 	
-    whoend = new flixel.text.FlxText(0, 1120, -1, 'i love my boyfriend');
+    whoend = new flixel.addons.text.FlxTypeText();
 	whoend.setFormat(Paths.font('vcr.ttf'), 50, 0xFFFFFFFF);
 	whoend.antialiasing = false;
-	insert(0, whoend);
-	whoend.text = Lang.str('who-end');
+	whoend.resetText(Lang.str('who-end'));
+	whoend.delay = 0.05;
 	whoend.updateHitbox();
-	whoend.x = 1100 - (whoend.frameWidth / 2);
+	whoend.x = 328;
+	whoend.y = 1100;
+	add(whoend);
 	
 	whoAngered = new FlxSprite(-1000, 975);
 	whoAngered.loadGraphic(Paths.image(ext + "mad mad dude"));
@@ -111,7 +113,7 @@ function onEvent(eventName, value1, value2)
 								emergency.visible = true;
 							}
 						case 1:
-							whoend.visible = true;
+							new flixel.util.FlxTimer().start(1, function(_) whoend.start());
 							furiousRage.visible = false;
 							emergency.visible = false;
 							bg.visible = false;
