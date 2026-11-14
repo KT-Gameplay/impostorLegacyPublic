@@ -39,6 +39,8 @@ Current version: **1.1.2**
 - A couple charts were fixed. (GitHub contribution)
 - Crew GF was given a Weird variant. (GitHub contribution)
 - Playable JADS was cleaned up and most of his features were commented out.
+- Given icons for playable Tomongus.
+- Some playable characters had their scaling and positions tweaked.
 
 ## 1.1.2 (july 23 2026)
 

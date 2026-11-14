@@ -44,6 +44,10 @@ Current version: **1.1.2**
 ### Additions
 - Chef BF given a Monotone variant.
 - Added support for custom Monotone pets. (GitHub contribution)
+- Given icons for:
+  - Crew GF
+  - Ghost BF
+  - Ghost BF
 
 ### Bugfixes
 - Fixed a game breaking issue when opening the Credits during a modded song.
@@ -68,6 +72,8 @@ Current version: **1.1.2**
 - Playable characters now have a `defeatScared` variant, used both in Defeat and Finale. (GitHub contribution)
 - "WTF" text in O2 now uses the player characters healthbar color. (GitHub contribution)
 - Mods can now call users Discord username with HScript. (GitHub contribution)
+- Transparent icons had their alpha values changed for consistency.
+- Some playable characters had their scaling and positions tweaked.
 
 ## 1.1.2 (july 23 2026)
 
