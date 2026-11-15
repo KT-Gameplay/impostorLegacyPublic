@@ -44,10 +44,11 @@ Current version: **1.1.2**
 ### Additions
 - Chef BF given a Monotone variant.
 - Added support for custom Monotone pets. (GitHub contribution)
-- Given icons for:
+- Given custom icons for:
   - Crew GF
   - Ghost BF
   - Ghost BF
+  - Playable Yellow
 
 ### Bugfixes
 - Fixed a game breaking issue when opening the Credits during a modded song.
