@@ -250,6 +250,6 @@
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 6,
-	"scale": 0.9,
+	"scale": 0.95,
 	"_editor_isPlayer": false
 }

@@ -160,12 +160,12 @@
 	},
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "yellow-dead-dead",
+	"healthicon": "yellowp-dead-dead",
 	"afterimages": true,
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": true,
-	"healthbar_colour": -1001146,
+	"healthbar_colour": -338599,
 	"camera_position": [
 		160,
 		-81

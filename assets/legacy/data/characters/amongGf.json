@@ -72,7 +72,7 @@
 	"gameover_intial_sound": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
-	"healthicon": "gf",
+	"healthicon": "gfcrew",
 	"gameover_character": null,
 	"vslice_sustains": false,
 	"flip_x": false,
@@ -86,6 +86,9 @@
 	"scale": 1,
 	"_editor_isPlayer": false,
 	"flags": {
-		"lightsDownSpeaker": true
+		"lightsDownSpeaker": true,
+		"variants":{
+			"weird": "amonggfweird"
+		}
 	}
 }

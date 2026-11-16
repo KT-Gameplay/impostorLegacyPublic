@@ -6,9 +6,9 @@ public var hudDarkShader:ExtraDropShadowShader;
 public var darkShader:ExtraDropShadowShader;
 public var vignette:Bool = false;
 var ouch:Bool = false;
-var hesDying:Bool = false;
-var dieMiss:Bool = false;
-var isDark:Bool = false;
+public var hesDying:Bool = false;
+public var dieMiss:Bool = false;
+public var isDark:Bool = false;
 var fakeIcon:FlxSprite;
 var variant = boyfriend.getFlag('variants')?.stabbed;
 var noshader:Bool = false;
@@ -229,6 +229,7 @@ function onEvent(name, v1, v2)
             guy2.alpha = 1;
             guy3.alpha = 1;
 			playHUD.healthBar.bg.setColorTransform();
+			playHUD.healthBar.setColors(dad.healthColour, boyfriend.healthColour);
 			
 			if (!ClientPrefs.hideHud)
 			{

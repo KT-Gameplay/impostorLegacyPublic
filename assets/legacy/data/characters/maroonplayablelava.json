@@ -231,7 +231,7 @@
 	"no_antialiasing": false,
 	"image": "characters/bf/cosmicube/playermaroonlava",
 	"position": [
-		-200,
+		-190,
 		340
 	],
 	"dance_every": 2,
@@ -249,7 +249,7 @@
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 6,
-	"scale": 0.9,
+	"scale": 0.95,
 	"_editor_isPlayer": true,
 	"flags": {
 		"finaleHealthBarColor": ["0xFF6B2B3C", "0xFFCC5849", "0xFF440D37"]
